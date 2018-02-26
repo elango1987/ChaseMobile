@@ -9,7 +9,4 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features= {"features"}, glue= {"com.chase.stepdefinitions"})
 public class TestRunner {
 	
-	//DesiredCapabilities cap = new DesiredCapabilities();
-	//Common common = new Common();
-
 }
