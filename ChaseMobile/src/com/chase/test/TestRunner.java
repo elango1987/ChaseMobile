@@ -1,4 +1,4 @@
-package com.chase.tests;
+package com.chase.test;
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
