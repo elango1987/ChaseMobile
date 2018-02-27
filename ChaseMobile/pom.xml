@@ -23,7 +23,8 @@
 					<!-- <testClassesDirectory>s360UIAutomationCC/src/main/java</testClassesDirectory> -->
 					<!--  <testSourceDirectory>ChaseMobile/ChaseMobile/src/com/chase/tests/</testSourceDirectory> --> 
 						<includes>
-							<include>**/*TestRunner.java</include>
+							<!--  include>**/*TestRunner.java</include> -->
+							<include>ChaseMobile/ChaseMobile/src/com/chase/tests/TestRunner.java</include>
 						</includes>
 						<!-- <excludes> <exclude>**/*RunCukesTest.java</exclude> </excludes> -->
 					</configuration>
