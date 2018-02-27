@@ -25,6 +25,7 @@
 						<includes>
 							<!--  include>**/*TestRunner.java</include> -->
 							<include>TestRunner.java</include>
+							<include>ChaseLogon.java</include>
 						</includes>
 						<!-- <excludes> <exclude>**/*RunCukesTest.java</exclude> </excludes> -->
 					</configuration>
