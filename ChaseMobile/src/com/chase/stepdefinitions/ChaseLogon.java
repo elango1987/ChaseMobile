@@ -33,7 +33,7 @@ public class ChaseLogon {
 	}
 
 	public void initializeApp() {
-		driver.findElement(By.id("android:id/button1")).click();
+		driver.findElementById("android:id/button1").click();
 		WebElement allowLocationPermission = (new WebDriverWait(driver, 10)).until(ExpectedConditions
 				.presenceOfElementLocated(By.id("com.android.packageinstaller:id/permission_allow_button")));
 		allowLocationPermission.click();
@@ -48,8 +48,8 @@ public class ChaseLogon {
 
 	public void validateAlternateLogOnScreen() {
 		
-		if ((driver.findElement(By.xpath("//android.widget.Button[@text='Log On']")).isDisplayed())
-				&& driver.findElement(By.xpath("//android.widget.Button[@text='Enroll']")).isDisplayed())
+		if ((driver.findElementByXPath("//android.widget.Button[@text='Log On']").isDisplayed())
+				&& driver.findElementByXPath("//android.widget.Button[@text='Enroll']").isDisplayed())
 			System.out.println("Alternate Log on is displayed");
 		else {
 			System.out.println("Alternate Log on is not displayed");
@@ -95,12 +95,13 @@ public class ChaseLogon {
 
 	@When("^the user taps on Enroll button$")
 	public void the_user_taps_on_Enroll_button() throws Throwable {
-		driver.findElement(By.xpath("//android.widget.Button[@text='Enroll']")).click();
+
+		driver.findElementByXPath("//android.widget.Button[@text='Enroll']").click();
 	}
 
 	@Then("^the Basic Info screen is displayed$")
 	public void the_Basic_Info_screen_is_displayed() throws Throwable {
-		if (driver.findElement(By.xpath("//android.widget.TextView[@text='BASIC INFO']")).isDisplayed())
+		if (driver.findElementByXPath("//android.widget.TextView[@text='BASIC INFO']").isDisplayed())
 			System.out.println("Basic Info Screen is displayed");
 		else {
 			System.out.println("Basic Info screen is not displayed");
@@ -122,14 +123,13 @@ public class ChaseLogon {
 	@When("^the user taps on Log on$")
 	public void the_user_taps_on_Log_on() throws Throwable {
 		
-		driver.findElement(By.xpath("//android.widget.Button[@text='Log On']")).click();
-		
+		driver.findElementByXPath("//android.widget.Button[@text='Log On']").click();	
 
 	}
 
 	@Then("^the BAU log on screen is displayed$")
 	public void the_BAU_log_on_screen_is_displayed() throws Throwable {
-		if (driver.findElement(By.xpath("//android.widget.EditText[@text='User ID']")).isDisplayed())
+		if (driver.findElementByXPath("//android.widget.EditText[@text='User ID']").isDisplayed())
 			System.out.println("BAU log on screen is displayed");
 
 		resetApp();
