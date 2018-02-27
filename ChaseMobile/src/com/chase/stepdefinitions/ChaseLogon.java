@@ -123,6 +123,7 @@ public class ChaseLogon {
 	public void the_user_taps_on_Log_on() throws Throwable {
 		
 		driver.findElement(By.xpath("//android.widget.Button[@text='Log On']")).click();
+		
 
 	}
 
