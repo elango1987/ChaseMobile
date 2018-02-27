@@ -21,7 +21,7 @@
 					<version>2.20</version>
 					<configuration>
 					<!-- <testClassesDirectory>s360UIAutomationCC/src/main/java</testClassesDirectory> -->
-					<testSourceDirectory>ChaseMobile/ChaseMobile/src/com/chase/tests/</testSourceDirectory> 
+					<!--  <testSourceDirectory>ChaseMobile/ChaseMobile/src/com/chase/tests/</testSourceDirectory> --> 
 						<includes>
 							<include>**/*TestRunner.java</include>
 						</includes>
